@@ -68,8 +68,8 @@ public class Application extends SpringBootServletInitializer {
 			@Value("${MSSQL_DATABASE_NAME}") String database) {
 
 		SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
-		dataSource.setDriverClass(SQLServerDriver.class);
-		dataSource.setUrl(String.format("jdbc:sqlserver://%s:%s;databaseName=%s", host, port, database));
+		dataSource.setDriverClass(net.sourceforge.jtds.jdbc.Driver.class);
+		dataSource.setUrl(String.format("jdbc:jtds:sqlserver://%s:%s/%s", host, port, database));
 		dataSource.setUsername(username);
 		dataSource.setPassword(password);
 
