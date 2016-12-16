@@ -3,7 +3,6 @@ package com.heywoodbanks.bootmssql;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import com.codahale.metrics.servlets.HealthCheckServlet;
 import com.codahale.metrics.servlets.PingServlet;
-import com.microsoft.sqlserver.jdbc.SQLServerDriver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
